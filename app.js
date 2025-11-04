@@ -21,7 +21,7 @@ var w = c.width = window.innerWidth,
 			fireworkBaseReachTime: 30,
 			fireworkAddedReachTime: 30,
 			fireworkCircleBaseSize: 20,
-			fireworkCircleAddedSize: 10,
+			fireworkCircleAddedSize: 2000,
 			fireworkCircleBaseTime: 30,
 			fireworkCircleAddedTime: 30,
 			fireworkCircleFadeBaseTime: 10,
@@ -69,10 +69,10 @@ function Letter( char, x, y ){
 	
 	var hue = x / calc.totalWidth * 360;
 	
-	this.color = 'hsl(hue,80%,50%)'.replace( 'hue', hue );
-	this.lightAlphaColor = 'hsla(hue,80%,light%,alp)'.replace( 'hue', hue );
-	this.lightColor = 'hsl(hue,80%,light%)'.replace( 'hue', hue );
-	this.alphaColor = 'hsla(hue,80%,50%,alp)'.replace( 'hue', hue );
+	this.color = 'hsl(hue,95%,65%)'.replace( 'hue', hue );
+	this.lightAlphaColor = 'hsla(hue,90%,light%,alp)'.replace( 'hue', hue );
+	this.lightColor = 'hsl(hue,85%,light%)'.replace( 'hue', hue );
+	this.alphaColor = 'hsla(hue,90%,60%,alp)'.replace( 'hue', hue );
 	
 	this.reset();
 }
